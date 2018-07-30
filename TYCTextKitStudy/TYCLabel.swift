@@ -72,5 +72,29 @@ private extension TYCLabel {
         }else {
             textStorage.setAttributedString(NSAttributedString(string: ""))
         }
+        print(urlRanges)
     }
+}
+
+// MARK: - 正则表达式函数
+private extension TYCLabel {
+    /// 返回 textStorage 中的 URL range数组
+    var urlRanges: [NSRange]? {
+        
+        //1.正则表达式
+        let parttern = "[a-zA-Z]*://[a-zA-Z0-9/\\.]*"
+        guard let regx = try? NSRegularExpression(pattern: parttern, options: []) else {
+            return nil
+        }
+        //2.多重匹配
+        let matches = regx.matches(in: textStorage.string, options: [], range: NSRange(location: 0, length: textStorage.length))
+        //3. 遍历数组，生成range的数组
+        var ranges = [NSRange]()
+        
+        for m in matches {
+            ranges.append(m.range(at: 0))
+        }
+        return ranges
+    }
+    
 }
