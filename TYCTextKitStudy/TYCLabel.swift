@@ -14,9 +14,19 @@ import UIKit
  3.交互
  
  - UILabel 默认不能实现垂直顶部对齐, 使用TextKit
+ - 提示：
+    - 在iOS7之前，要实现类似的效果，需要用CoreText使用起来异常繁琐
+    - YYModel 的作者开发了一个框架YYText，自己建立了一套渲染系统
  */
 class TYCLabel: UILabel {
 
+    //MARK: - 重写属性 -进一步体会textKit接管底层的实现，一旦内容变化，需要让textStorage 相应变化
+    override var text: String? {
+        didSet {
+            //重新准备文本内容
+            prepareTextContent()
+        }
+    }
     //MARK: - 构造函数
     override init(frame: CGRect) {
         super.init(frame: frame)
