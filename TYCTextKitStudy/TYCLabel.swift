@@ -27,8 +27,28 @@ class TYCLabel: UILabel {
         super.init(coder: aDecoder)
         prepareTextSystem()
     }
-    
-    //绘制文本
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        //1.获取用户的点击的位置
+        guard let location = touches.first?.location(in: self) else {
+            return
+        }
+        print("\(location)")
+        //2.获取当前点中字符的索引
+        let idx = layoutManager.glyphIndex(for: location, in: textContainer)
+        print("点我了 \(idx)")
+        for r in urlRanges ?? [] {
+            if NSLocationInRange(idx, r) {
+                print("需要高亮")
+                //修改文本的字体属性
+                textStorage.addAttributes([NSAttributedStringKey.foregroundColor: UIColor.blue], range: r)
+                //如果需要重绘，需要调用一个函数setNeedsDisplay，但是不是drawRect
+                setNeedsDisplay()
+            } else {
+                print("没戳中")
+            }
+        }
+    }
+    //MARK: - 绘制文本
     /**
         在iOS中绘制工作是类似于油画似的，后绘制的内容，会把之前会知道的内容覆盖
      */
@@ -61,6 +81,9 @@ class TYCLabel: UILabel {
 private extension TYCLabel {
     /// 准备文本系统
     func prepareTextSystem()  {
+        
+        //0. 开启用户交互
+        isUserInteractionEnabled = true
         //1. 准备文本内容
         prepareTextContent()
         //2. 设置对象的关系
