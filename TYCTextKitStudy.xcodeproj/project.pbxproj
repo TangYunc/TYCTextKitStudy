@@ -1,0 +1,593 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		DD161578210EFBE500631B1F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD161577210EFBE500631B1F /* AppDelegate.swift */; };
+		DD16157A210EFBE500631B1F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD161579210EFBE500631B1F /* ViewController.swift */; };
+		DD16157D210EFBE500631B1F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DD16157B210EFBE500631B1F /* Main.storyboard */; };
+		DD16157F210EFC0400631B1F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DD16157E210EFC0400631B1F /* Assets.xcassets */; };
+		DD161582210EFC0500631B1F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DD161580210EFC0500631B1F /* LaunchScreen.storyboard */; };
+		DD16158D210EFC0600631B1F /* TYCTextKitStudyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD16158C210EFC0600631B1F /* TYCTextKitStudyTests.swift */; };
+		DD161598210EFC0600631B1F /* TYCTextKitStudyUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD161597210EFC0600631B1F /* TYCTextKitStudyUITests.swift */; };
+		DD1615A6210EFCE100631B1F /* TYCLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD1615A5210EFCE100631B1F /* TYCLabel.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		DD161589210EFC0600631B1F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DD16156C210EFBE400631B1F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DD161573210EFBE500631B1F;
+			remoteInfo = TYCTextKitStudy;
+		};
+		DD161594210EFC0600631B1F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DD16156C210EFBE400631B1F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DD161573210EFBE500631B1F;
+			remoteInfo = TYCTextKitStudy;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		DD161574210EFBE500631B1F /* TYCTextKitStudy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TYCTextKitStudy.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DD161577210EFBE500631B1F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		DD161579210EFBE500631B1F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		DD16157C210EFBE500631B1F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		DD16157E210EFC0400631B1F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		DD161581210EFC0500631B1F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		DD161583210EFC0500631B1F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DD161588210EFC0600631B1F /* TYCTextKitStudyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TYCTextKitStudyTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		DD16158C210EFC0600631B1F /* TYCTextKitStudyTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TYCTextKitStudyTests.swift; sourceTree = "<group>"; };
+		DD16158E210EFC0600631B1F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DD161593210EFC0600631B1F /* TYCTextKitStudyUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TYCTextKitStudyUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		DD161597210EFC0600631B1F /* TYCTextKitStudyUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TYCTextKitStudyUITests.swift; sourceTree = "<group>"; };
+		DD161599210EFC0600631B1F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DD1615A5210EFCE100631B1F /* TYCLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TYCLabel.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DD161571210EFBE500631B1F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DD161585210EFC0600631B1F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DD161590210EFC0600631B1F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		DD16156B210EFBE400631B1F = {
+			isa = PBXGroup;
+			children = (
+				DD161576210EFBE500631B1F /* TYCTextKitStudy */,
+				DD16158B210EFC0600631B1F /* TYCTextKitStudyTests */,
+				DD161596210EFC0600631B1F /* TYCTextKitStudyUITests */,
+				DD161575210EFBE500631B1F /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		DD161575210EFBE500631B1F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DD161574210EFBE500631B1F /* TYCTextKitStudy.app */,
+				DD161588210EFC0600631B1F /* TYCTextKitStudyTests.xctest */,
+				DD161593210EFC0600631B1F /* TYCTextKitStudyUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DD161576210EFBE500631B1F /* TYCTextKitStudy */ = {
+			isa = PBXGroup;
+			children = (
+				DD161577210EFBE500631B1F /* AppDelegate.swift */,
+				DD161579210EFBE500631B1F /* ViewController.swift */,
+				DD1615A5210EFCE100631B1F /* TYCLabel.swift */,
+				DD16157B210EFBE500631B1F /* Main.storyboard */,
+				DD16157E210EFC0400631B1F /* Assets.xcassets */,
+				DD161580210EFC0500631B1F /* LaunchScreen.storyboard */,
+				DD161583210EFC0500631B1F /* Info.plist */,
+			);
+			path = TYCTextKitStudy;
+			sourceTree = "<group>";
+		};
+		DD16158B210EFC0600631B1F /* TYCTextKitStudyTests */ = {
+			isa = PBXGroup;
+			children = (
+				DD16158C210EFC0600631B1F /* TYCTextKitStudyTests.swift */,
+				DD16158E210EFC0600631B1F /* Info.plist */,
+			);
+			path = TYCTextKitStudyTests;
+			sourceTree = "<group>";
+		};
+		DD161596210EFC0600631B1F /* TYCTextKitStudyUITests */ = {
+			isa = PBXGroup;
+			children = (
+				DD161597210EFC0600631B1F /* TYCTextKitStudyUITests.swift */,
+				DD161599210EFC0600631B1F /* Info.plist */,
+			);
+			path = TYCTextKitStudyUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		DD161573210EFBE500631B1F /* TYCTextKitStudy */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DD16159C210EFC0600631B1F /* Build configuration list for PBXNativeTarget "TYCTextKitStudy" */;
+			buildPhases = (
+				DD161570210EFBE500631B1F /* Sources */,
+				DD161571210EFBE500631B1F /* Frameworks */,
+				DD161572210EFBE500631B1F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TYCTextKitStudy;
+			productName = TYCTextKitStudy;
+			productReference = DD161574210EFBE500631B1F /* TYCTextKitStudy.app */;
+			productType = "com.apple.product-type.application";
+		};
+		DD161587210EFC0600631B1F /* TYCTextKitStudyTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DD16159F210EFC0600631B1F /* Build configuration list for PBXNativeTarget "TYCTextKitStudyTests" */;
+			buildPhases = (
+				DD161584210EFC0600631B1F /* Sources */,
+				DD161585210EFC0600631B1F /* Frameworks */,
+				DD161586210EFC0600631B1F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DD16158A210EFC0600631B1F /* PBXTargetDependency */,
+			);
+			name = TYCTextKitStudyTests;
+			productName = TYCTextKitStudyTests;
+			productReference = DD161588210EFC0600631B1F /* TYCTextKitStudyTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		DD161592210EFC0600631B1F /* TYCTextKitStudyUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DD1615A2210EFC0600631B1F /* Build configuration list for PBXNativeTarget "TYCTextKitStudyUITests" */;
+			buildPhases = (
+				DD16158F210EFC0600631B1F /* Sources */,
+				DD161590210EFC0600631B1F /* Frameworks */,
+				DD161591210EFC0600631B1F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DD161595210EFC0600631B1F /* PBXTargetDependency */,
+			);
+			name = TYCTextKitStudyUITests;
+			productName = TYCTextKitStudyUITests;
+			productReference = DD161593210EFC0600631B1F /* TYCTextKitStudyUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DD16156C210EFBE400631B1F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0940;
+				LastUpgradeCheck = 0940;
+				ORGANIZATIONNAME = tangyunchuan;
+				TargetAttributes = {
+					DD161573210EFBE500631B1F = {
+						CreatedOnToolsVersion = 9.4.1;
+					};
+					DD161587210EFC0600631B1F = {
+						CreatedOnToolsVersion = 9.4.1;
+						TestTargetID = DD161573210EFBE500631B1F;
+					};
+					DD161592210EFC0600631B1F = {
+						CreatedOnToolsVersion = 9.4.1;
+						TestTargetID = DD161573210EFBE500631B1F;
+					};
+				};
+			};
+			buildConfigurationList = DD16156F210EFBE400631B1F /* Build configuration list for PBXProject "TYCTextKitStudy" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = DD16156B210EFBE400631B1F;
+			productRefGroup = DD161575210EFBE500631B1F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DD161573210EFBE500631B1F /* TYCTextKitStudy */,
+				DD161587210EFC0600631B1F /* TYCTextKitStudyTests */,
+				DD161592210EFC0600631B1F /* TYCTextKitStudyUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		DD161572210EFBE500631B1F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DD161582210EFC0500631B1F /* LaunchScreen.storyboard in Resources */,
+				DD16157F210EFC0400631B1F /* Assets.xcassets in Resources */,
+				DD16157D210EFBE500631B1F /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DD161586210EFC0600631B1F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DD161591210EFC0600631B1F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DD161570210EFBE500631B1F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DD1615A6210EFCE100631B1F /* TYCLabel.swift in Sources */,
+				DD16157A210EFBE500631B1F /* ViewController.swift in Sources */,
+				DD161578210EFBE500631B1F /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DD161584210EFC0600631B1F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DD16158D210EFC0600631B1F /* TYCTextKitStudyTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DD16158F210EFC0600631B1F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DD161598210EFC0600631B1F /* TYCTextKitStudyUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		DD16158A210EFC0600631B1F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DD161573210EFBE500631B1F /* TYCTextKitStudy */;
+			targetProxy = DD161589210EFC0600631B1F /* PBXContainerItemProxy */;
+		};
+		DD161595210EFC0600631B1F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DD161573210EFBE500631B1F /* TYCTextKitStudy */;
+			targetProxy = DD161594210EFC0600631B1F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		DD16157B210EFBE500631B1F /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DD16157C210EFBE500631B1F /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		DD161580210EFC0500631B1F /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DD161581210EFC0500631B1F /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		DD16159A210EFC0600631B1F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		DD16159B210EFC0600631B1F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		DD16159D210EFC0600631B1F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 832LY843KW;
+				INFOPLIST_FILE = TYCTextKitStudy/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.goldShield.TYCTextKitStudy;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		DD16159E210EFC0600631B1F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 832LY843KW;
+				INFOPLIST_FILE = TYCTextKitStudy/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.goldShield.TYCTextKitStudy;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		DD1615A0210EFC0600631B1F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 832LY843KW;
+				INFOPLIST_FILE = TYCTextKitStudyTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.goldShield.TYCTextKitStudyTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TYCTextKitStudy.app/TYCTextKitStudy";
+			};
+			name = Debug;
+		};
+		DD1615A1210EFC0600631B1F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 832LY843KW;
+				INFOPLIST_FILE = TYCTextKitStudyTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.goldShield.TYCTextKitStudyTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TYCTextKitStudy.app/TYCTextKitStudy";
+			};
+			name = Release;
+		};
+		DD1615A3210EFC0600631B1F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 832LY843KW;
+				INFOPLIST_FILE = TYCTextKitStudyUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.goldShield.TYCTextKitStudyUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = TYCTextKitStudy;
+			};
+			name = Debug;
+		};
+		DD1615A4210EFC0600631B1F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 832LY843KW;
+				INFOPLIST_FILE = TYCTextKitStudyUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.goldShield.TYCTextKitStudyUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = TYCTextKitStudy;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		DD16156F210EFBE400631B1F /* Build configuration list for PBXProject "TYCTextKitStudy" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DD16159A210EFC0600631B1F /* Debug */,
+				DD16159B210EFC0600631B1F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DD16159C210EFC0600631B1F /* Build configuration list for PBXNativeTarget "TYCTextKitStudy" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DD16159D210EFC0600631B1F /* Debug */,
+				DD16159E210EFC0600631B1F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DD16159F210EFC0600631B1F /* Build configuration list for PBXNativeTarget "TYCTextKitStudyTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DD1615A0210EFC0600631B1F /* Debug */,
+				DD1615A1210EFC0600631B1F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DD1615A2210EFC0600631B1F /* Build configuration list for PBXNativeTarget "TYCTextKitStudyUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DD1615A3210EFC0600631B1F /* Debug */,
+				DD1615A4210EFC0600631B1F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = DD16156C210EFBE400631B1F /* Project object */;
+}
