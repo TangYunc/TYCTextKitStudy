@@ -10,7 +10,7 @@ import UIKit
 
 /**
  1.使用textKit 接管 Label 的底层实现 - '绘制' textStorage 的文本内容
- 2.使用正则表达式过滤 URL
+ 2.使用正则表达式过滤 URL， 设置URL的特殊显示
  3.交互
  
  - UILabel 默认不能实现垂直顶部对齐, 使用TextKit
@@ -29,11 +29,17 @@ class TYCLabel: UILabel {
     }
     
     //绘制文本
+    /**
+        在iOS中绘制工作是类似于油画似的，后绘制的内容，会把之前会知道的内容覆盖
+     */
     override func drawText(in rect: CGRect) {
         
         let range = NSRange(location: 0, length: textStorage.length)
+        //绘制字形
+        layoutManager.drawBackground(forGlyphRange: range, at: CGPoint())
         // Glyphs 字形
         layoutManager.drawGlyphs(forGlyphRange: range, at: CGPoint())
+//        layoutManager.drawBackground(forGlyphRange: range, at: CGPoint())
     }
     
     override func layoutSubviews() {
@@ -73,6 +79,10 @@ private extension TYCLabel {
             textStorage.setAttributedString(NSAttributedString(string: ""))
         }
         print(urlRanges)
+        //便利范围数组，设置URL文字的属性
+        for r in urlRanges ?? [] {
+            textStorage.addAttributes([NSAttributedStringKey.foregroundColor: UIColor.red, NSAttributedStringKey.backgroundColor: UIColor.init(white: 0.9, alpha: 1.0)], range: r)
+        }
     }
 }
 
